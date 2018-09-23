@@ -107,7 +107,7 @@ Some of the screen shots while testing the images showing the test image and ret
 ![Fig6](fig6.png)
 ---
 
-##*REFERENCES:*
+## *REFERENCES:*
 
 [1]	H. Eidenberger and C. Breiteneder, “Semantic Feature Layers in Content-based Image Retrieval: Implementation of Human World Features” in Seventh International Conference an Control, Automation,Robotics And Vision (ICARCV'O2), 2002.
 
