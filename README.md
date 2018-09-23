@@ -51,7 +51,7 @@ In multimedia retrieval, target images in the database- which is a finite local 
 The chosen approach was the distance measurement. In the algorithm, an image is represented into a fixed size vector as mentioned earlier and the content relevance is measured based on the normalized distance between the vectors of the aggregated features by the following formula
 
 ![formula](formula.PNG)
-**Fig. 3: The HSV space demonstrated**
+
 Where N is the number of features and both X and Y are the images being compared.
 
 ## Some findings:
@@ -76,6 +76,36 @@ Other modifications can address the semantic gap previously discussed, but befor
 * Both level 2 and 3 can be referred to as semantic level retrieval and the difference between these two levels and level one is what we previously defined as the semantic gap.
 
 So to overcome this gap, two modifications were previously reported in literature:
+
+### 1. Semantic feature layers:
+The idea mainly relies on designing semantically related feature classes that depend on lower level including additional knowledge. Such design requires iterative refinement by relevance feedback.[1]
+### 2. Object onthology:
+Object onthology provides a qualitative definition of high level query concepts and such an approach is applied via some main steps: 
+
+* Use object onthology to define high level concepts
+* Use machine learning to link low level queries with high level concepts
+* Introduce a relevance feedback loop to make sure that the program is on the right trach in parallel with the user’s intentions
+* Generate semantic template to support high level retrieval
+* Make use of both the query and the textual information obtained from the web during the search.[2]
+
+## Coding and outputs:
+
+The program is made with a GUI (graphical user interface) to be clear and easy to use. The images dataset which the search is made on are stored in a the folder “images”, the main GUI is coded in the two files “CBIR.fig” and”CBIR.m” but the process of features extraction is made by the code “Extract_features.m”.
+First the query image is loaded at this point all the previously mentioned features are extracted from the image then it is shown in the main GUI platform under title “Loaded image”.
+Then the extracted features are compares to the already saved and processed database where the distance between the query image and all images in the dataset is calculated.
+Finally the nearest ten images to the query image are shown in the GUI named “Search results” as shown in the next examples made to test algorithm. 
+
+##Verification and testing:
+Some of the screen shots while testing the images showing the test image and retrieved Images :)
+
+![Fig4](fig4.png)
+
+![Fig5](fig5.png)
+
+![Fig6](fig6.png)
+
+
+
 
 
 
