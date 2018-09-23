@@ -110,8 +110,11 @@ Some of the screen shots while testing the images showing the test image and ret
 ##*REFERENCES:*
 
 [1]	H. Eidenberger and C. Breiteneder, “Semantic Feature Layers in Content-based Image Retrieval: Implementation of Human World Features” in Seventh International Conference an Control, Automation,Robotics And Vision (ICARCV'O2), 2002.
+
 [2]	A. Khodaska and S.A. Ladke, “Content Based Image Retrieval with Semantic Features using Object Ontology” in the International Journal of Engineering Research & Technology (IJERT),vol. 1, no 4, 2012.
+
 [3]	W. Zhou, H. Li and Q. Tian,” Recent Advances in Content-based Image Retrieval: A literature Survey”
+
 [4]	 CBIR, Content-based Image Retrieval, J. M., Department of Computer Science, Aristotle University
 
 
