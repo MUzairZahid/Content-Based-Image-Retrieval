@@ -96,7 +96,9 @@ Then the extracted features are compares to the already saved and processed data
 Finally the nearest ten images to the query image are shown in the GUI named “Search results” as shown in the next examples made to test algorithm. 
 
 ## Verification and testing:
+
 Some of the screen shots while testing the images showing the test image and retrieved Images :)
+
 ---
 ![Fig4](fig4.png)
 ---
@@ -104,6 +106,14 @@ Some of the screen shots while testing the images showing the test image and ret
 ---
 ![Fig6](fig6.png)
 ---
+
+##*REFERENCES:*
+
+[1]	H. Eidenberger and C. Breiteneder, “Semantic Feature Layers in Content-based Image Retrieval: Implementation of Human World Features” in Seventh International Conference an Control, Automation,Robotics And Vision (ICARCV'O2), 2002.
+[2]	A. Khodaska and S.A. Ladke, “Content Based Image Retrieval with Semantic Features using Object Ontology” in the International Journal of Engineering Research & Technology (IJERT),vol. 1, no 4, 2012.
+[3]	W. Zhou, H. Li and Q. Tian,” Recent Advances in Content-based Image Retrieval: A literature Survey”
+[4]	 CBIR, Content-based Image Retrieval, J. M., Department of Computer Science, Aristotle University
+
 
 
 
