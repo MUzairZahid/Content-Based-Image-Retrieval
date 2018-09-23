@@ -43,12 +43,45 @@ HSV space was created in the seventies by graphic design researchers as an alter
 
 ![Fig3](fig3.png)
 
-*Fig. 3: The HSV space demonstrated*
+**Fig. 3: The HSV space demonstrated**
 
 
 The issues of image organization as well as the measurement of similarity between images has been previously discussed earlier in the report, hence we discuss the used strategy to accomplish these two tasks in our algorithm.
 In multimedia retrieval, target images in the database- which is a finite local set in our case- are ranked by being assigned with a relevance score and returned to the user. Such relevance score is determined by the choice of the similarity measurement as “it can be defined either by measuring the distance between the aggregated feature vector of the image representation or from the perspective of voting from relevant visual feature matches.” [3]
 The chosen approach was the distance measurement. In the algorithm, an image is represented into a fixed size vector as mentioned earlier and the content relevance is measured based on the normalized distance between the vectors of the aggregated features by the following formula
+
+![formula](formula.PNG)
+**Fig. 3: The HSV space demonstrated**
+Where N is the number of features and both X and Y are the images being compared.
+
+## Some findings:
+It can be expected that the suggested approach of solely using the color histogram for the purpose of image representation is not enough to get a functional solid algorithm. Two dissimilar images could have similar representation if they happen to have similar color scheme. Hence comes the need to go beyond color histogram and use other features for presentation. In addition to color histogram, the following features were used:
+
+
+* Color auto-correlogram where the image is quantized into 4×4×4 colors in RGB adding 64 more dimensions
+* Color moments where the mean and standard deviation i.e. the first two moments from the R, G and B color channels are extracted adding 6 dimensions
+* Gabor wavelet whose filters span four scales ( 0.05,0.1,0.2 and 0.4 ) and six orientations ( θo=0 and θn+1=π/6 ). The filters are applied to the image and the mean and standard deviation of the wavelet coefficient are used to form the feature vector resulting in the addition of 48 dimensions
+* Wavelet moments as by the use of the mean and the standard deviation of the transform coefficient to form the feature vector when applying the wavelet transform to the 3-level decomposition. 40 dimensions are hence added.
+
+
+
+
+
+The total of the features used will form a 190-dimensional feature vector that will increase the efficiency of the retrieval considerably. [4]
+
+Other modifications can address the semantic gap previously discussed, but before considering those modifications, let us discuss the three main levels of queries in CBIR:
+* The first level is retrieval by primitive features such as color, texture or regions our developed algorithm. At this level the user inputs a query as an example, simply stated, the user expects the program to find images similar to the one he inputs.
+* The second level is retrieval of objects of specific kind recognized by derived features demanding a certain amount of logical implication. The user in this case would command the program to find an image of a specific object, say a dog.
+* The third and final level is retrieval by abstract attributes demanding a high level of reasoning. To illustrate our point, the user might expect more specific outputs, so he could search for an image of not just a dog but a dog running or a dog eating.
+* Both level 2 and 3 can be referred to as semantic level retrieval and the difference between these two levels and level one is what we previously defined as the semantic gap.
+
+So to overcome this gap, two modifications were previously reported in literature:
+
+
+
+
+
+
 
 
 
