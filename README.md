@@ -95,15 +95,15 @@ First the query image is loaded at this point all the previously mentioned featu
 Then the extracted features are compares to the already saved and processed database where the distance between the query image and all images in the dataset is calculated.
 Finally the nearest ten images to the query image are shown in the GUI named “Search results” as shown in the next examples made to test algorithm. 
 
-##Verification and testing:
+## Verification and testing:
 Some of the screen shots while testing the images showing the test image and retrieved Images :)
-
+---
 ![Fig4](fig4.png)
-
+---
 ![Fig5](fig5.png)
-
+---
 ![Fig6](fig6.png)
-
+---
 
 
 
